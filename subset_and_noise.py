@@ -19,7 +19,7 @@ slected_col_names = df.columns[slected_col_indx]
 df = df[slected_col_names]
 
 sample_limit_value = max_percentage_noise_around_mean * int(math.pow(10,noise_bucket_levels));
-for i,col in enumerate(df.columns):
+for col in df.columns:
     random_percentage = np.random.choice(range(-sample_limit_value, sample_limit_value), df.shape[0])/(100*math.pow(10,noise_bucket_levels));
     df[col] = df[col] + df[col].mean()*random_percentage;
 
