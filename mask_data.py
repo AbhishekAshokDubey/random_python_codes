@@ -15,7 +15,7 @@ from math import ceil
 
 import os
 
-os.chdir(r"C:\Users\Adubey4\Desktop\microsoft\problem-statements-ms\WL");
+os.chdir(r"path");
 
 not_to_touch_column = ["field_ticket", "start_date", "end_date", "job_days"]
 
