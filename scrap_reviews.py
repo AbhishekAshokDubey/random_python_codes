@@ -9,7 +9,7 @@ import time
 from selenium import webdriver
 #from selenium.common.exceptions import TimeoutException
 
-#TODO: Replace python time.sleep(5) with webdriver's wait_untill.
+#TODO: Replace python time.sleep(5) with 'until_not' of 'WebDriverWait'.
 
 def filter_links(links_list, sub_string_list):
     regex = '|'.join("%s" % re.escape(s) for s in sub_string_list)
